@@ -1,0 +1,42 @@
+/*------------------------------------*\
+  VARIABLES
+\*------------------------------------*/
+
+/**
+ * The common variables for use in components
+ */
+
+/*------------------------------------*\
+  BASE
+\*------------------------------------*/
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+$base-spacing-unit: $base-line-height;
+$half-spacing-unit: $base-spacing-unit / 2!default;
+$line-height-ratio: $base-line-height / $base-font-size;
+
+/*------------------------------------*\
+  COLORS
+\*------------------------------------*/
+
+$ciena-color__background: #222!default;
+$ciena-color__background--medium: #333!default;
+$ciena-color__background--light: #888 !default;
+$ciena-color__primary--dark: #4f5050 !default;
+$ciena-color__primary--medium: #8C8C8C!default;
+$ciena-color__highlight: #af4c00 !default;
+
+$ciena-color__overlay--transparent: rgba(34, 34, 34, 0.8)!default;
+
+$ciena-color__function--negative__background: #b33630!default;
+$ciena-color__function--negative__foreground: #fff!default;
+$ciena-color__function--positive__background: #4A993E!default;
+$ciena-color__function--positive__foreground: #fff!default;
+
+/*------------------------------------*\
+  TEXTURES
+\*------------------------------------*/
+
+$ciena-texture__noise: url('/assets/images/texture/noise.png') repeat;

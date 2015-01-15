@@ -1,0 +1,9 @@
+html, body {
+  margin: 0px;
+  height: 100%;
+}
+
+.ciena-application {
+  height: 100%;
+  background: $ciena-color__background $ciena-texture__noise;
+}

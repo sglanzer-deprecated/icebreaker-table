@@ -1,0 +1,133 @@
+/*------------------------------------*\
+  WIDTH GRIDS
+\*------------------------------------*/
+
+.grid-width {
+  width: 100%;
+  @include display(flex);
+  @include flex-direction(row);
+
+  &__item {
+  }
+}
+
+/*------------------------------------*\
+  WIDTHS
+\*------------------------------------*/
+
+@mixin width-grid-setup($namespace: "") {
+  .#{$namespace}width-full              { @include flex(12); }
+
+  .#{$namespace}width-one-half          { @include flex(6); }
+
+  .#{$namespace}width-one-third         { @include flex(4); }
+  .#{$namespace}width-two-thirds        { @include flex(8); }
+
+  .#{$namespace}width-one-quarter       { @include flex(3); }
+  .#{$namespace}width-two-quarters      { @include flex(6); }
+  .#{$namespace}width-three-quarters    { @include flex(9); }
+
+  .#{$namespace}width-one-sixth         { @include flex(2); }
+  .#{$namespace}width-two-sixths        { @include flex(4); }
+  .#{$namespace}width-three-sixths      { @include flex(6); }
+  .#{$namespace}width-four-sixths       { @include flex(8); }
+  .#{$namespace}width-five-sixths       { @include flex(10); }
+
+  .#{$namespace}width-one-twelfth       { @include flex(1); }
+  .#{$namespace}width-two-twelfths      { @include flex(2); }
+  .#{$namespace}width-three-twelfths    { @include flex(3); }
+  .#{$namespace}width-four-twelfths     { @include flex(4); }
+  .#{$namespace}width-five-twelfths     { @include flex(5); }
+  .#{$namespace}width-six-twelfths      { @include flex(6); }
+  .#{$namespace}width-seven-twelfths    { @include flex(7); }
+  .#{$namespace}width-eight-twelfths    { @include flex(8); }
+  .#{$namespace}width-nine-twelfths     { @include flex(9); }
+  .#{$namespace}width-ten-twelfths      { @include flex(10); }
+  .#{$namespace}width-eleven-twelfths   { @include flex(11); }
+}
+
+@include width-grid-setup();
+
+/*------------------------------------*\
+  HEIGHT GRIDS
+\*------------------------------------*/
+
+  .grid-height {
+  height: 100%;
+  @include display(flex);
+  @include flex-direction(column);
+
+  &__item {
+  }
+}
+
+/*------------------------------------*\
+  HEIGHTS
+\*------------------------------------*/
+
+@mixin height-grid-setup($namespace: "") {
+  .#{$namespace}height-full              { @include flex(12); }
+
+  .#{$namespace}height-one-half          { @include flex(6); }
+
+  .#{$namespace}height-one-third         { @include flex(4); }
+  .#{$namespace}height-two-thirds        { @include flex(8); }
+
+  .#{$namespace}height-one-quarter       { @include flex(3); }
+  .#{$namespace}height-two-quarters      { @include flex(6); }
+  .#{$namespace}height-three-quarters    { @include flex(9); }
+
+  .#{$namespace}height-one-sixth         { @include flex(2); }
+  .#{$namespace}height-two-sixths        { @include flex(4); }
+  .#{$namespace}height-three-sixths      { @include flex(6); }
+  .#{$namespace}height-four-sixths       { @include flex(8); }
+  .#{$namespace}height-five-sixths       { @include flex(10); }
+
+  .#{$namespace}height-one-twelfth       { @include flex(1); }
+  .#{$namespace}height-two-twelfths      { @include flex(2); }
+  .#{$namespace}height-three-twelfths    { @include flex(3); }
+  .#{$namespace}height-four-twelfths     { @include flex(4); }
+  .#{$namespace}height-five-twelfths     { @include flex(5); }
+  .#{$namespace}height-six-twelfths      { @include flex(6); }
+  .#{$namespace}height-seven-twelfths    { @include flex(7); }
+  .#{$namespace}height-eight-twelfths    { @include flex(8); }
+  .#{$namespace}height-nine-twelfths     { @include flex(9); }
+  .#{$namespace}height-ten-twelfths      { @include flex(10); }
+  .#{$namespace}height-eleven-twelfths   { @include flex(11); }
+}
+
+@include height-grid-setup();
+
+/**
+ * You can define at which breakpoint you’d like an element to be a certain size, e.g.:
+ *
+ * `<div class="g  one-quarter  lap-one-half  palm-one-whole"> ... </div>`
+ *
+ * This would create a `div` that, at ‘desktop’ sizes, takes up a quarter of the
+ * horizontal space, a half of that space at ‘tablet’ sizes, and goes full width
+ * at ‘mobile’ sizes.
+ */
+
+//@include media-query(palm){
+//  @include width-grid-setup("palm-");
+//}
+//
+//@include media-query(lap){
+//  @include width-grid-setup("lap-");
+//}
+//
+//@include media-query(lap-and-up){
+//  @include width-grid-setup("lap-and-up-");
+//}
+//
+//@include media-query(portable){
+//  @include width-grid-setup("portable-");
+//}
+//
+//@include media-query(desk){
+//  @include width-grid-setup("desk-");
+//}
+//
+//@include media-query(desk-wide){
+//  @include width-grid-setup("desk-wide-");
+//}

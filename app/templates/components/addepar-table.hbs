@@ -1,0 +1,9 @@
+{{#if controller.hasHeader}}
+    {{icebreaker-table/header}}
+{{/if}}
+{{icebreaker-table/body}}
+{{#if controller.hasFooter}}
+    {{view Fo}}
+{{/if}}
+{{view ScrollContainer}}
+{{view ColumnSortableIndicator}}
