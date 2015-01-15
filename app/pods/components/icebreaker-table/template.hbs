@@ -1,0 +1,11 @@
+{{#if isHeaderEnabled}}
+  {{icebreaker-table/header}}
+{{/if}}
+{{icebreaker-table/body}}
+{{#if isFooterEnabled}}
+  {{icebreaker-table/footer}}
+{{/if}}
+{{#if notSureHowTheseAreSupposedToWork}}
+  {{view ScrollContainer}}
+  {{view ColumnSortableIndicator}}
+{{/if}}
