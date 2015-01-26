@@ -1,11 +1,4 @@
 {{#if isHeaderEnabled}}
-  {{icebreaker-table/header}}
+  {{[icebreaker-table/header] width=width height=headerHeight model=model}}
 {{/if}}
-{{icebreaker-table/body}}
-{{#if isFooterEnabled}}
-  {{icebreaker-table/footer}}
-{{/if}}
-{{#if notSureHowTheseAreSupposedToWork}}
-  {{view ScrollContainer}}
-  {{view ColumnSortableIndicator}}
-{{/if}}
+{{[icebreaker-table/body] width=width height=bodyHeight model=model}}
